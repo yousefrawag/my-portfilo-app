@@ -1,0 +1,137 @@
+/*  primaryColor: "#8873ef",
+        headingColor: "#081e21",
+        smallTextColor: "#193256", */ 
+.text-centerprof{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.text-centerprof h1{
+    color:#081e21;
+  
+} 
+
+ .btn-catg {
+    width:100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: white;
+    border:1px solid #8873ef;
+    outline: none;
+    color:#193256 ;
+
+}
+@media screen and (max-width: 800px){
+    .btn-catg {
+        width:82px;
+        height: 43px;
+        cursor: pointer;
+        border-radius: 8px;
+        background: white;
+        border:1px solid #8873ef;
+        outline: none;
+        color:#193256 ;
+        font-size: 13px;
+    }
+    .text-centerprof{
+        display: block;
+    }
+    .text-centerprof h1{
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    
+}
+.active{
+    background:#193256 !important;
+    color: white !important;
+    
+}       
+
+.section{
+    width: 100%;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  -webkit-box-shadow: -4px 4px 11px 1px rgba(0,0,0,0.31);
+-moz-box-shadow: -4px 4px 11px 1px rgba(0,0,0,0.31);
+box-shadow: -4px 4px 11px 1px rgba(0,0,0,0.31);
+}
+/* {
+    follow_me.map((link) => {
+      return (
+        <span key={link.id}>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <i className={link.icon}></i>
+              </a>
+        </span>
+      )
+    })
+  } */
+.section img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+  
+}
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8873ef;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.section:hover .opacity{
+    background-color: #8873ef7a;
+    opacity: 1;
+}
+.section:hover img{
+    transform: scale(1.1);
+}
+.opacity .btn-detl{
+    padding: 14px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #081e21;
+    outline: none;
+    border: none;
+    color:white ;
+   
+  
+}
+/* 
+
+
+
+
+
+/* justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; */ 
+  .btn-more{
+    padding: 14px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #081e21;
+    outline: none;
+    color:white ;
+    margin: 20px auto; 
+    display: grid;
+    place-items: center;
+}

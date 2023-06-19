@@ -1,0 +1,135 @@
+/*  primaryColor: "#8873ef",
+        headingColor: "#081e21",
+        smallTextColor: "#193256", */
+.header{
+    width: 100%;
+   padding-top: 20px;
+   transition: all 0.4s ease-in-out;
+}
+.sticky-header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    padding-bottom: 14px;
+    background: white;
+    -webkit-box-shadow: -3px 8px 29px -13px rgba(0,0,0,0.53);
+    -moz-box-shadow: -3px 8px 29px -13px rgba(0,0,0,0.53);
+    box-shadow: -3px 8px 29px -13px rgba(0,0,0,0.53);
+}
+.parent-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.log{
+    display: flex;
+    gap: 5px;
+}
+.log .log-radus{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    line-height: 1.8;
+    background: #8873ef;
+
+}
+.log .log-radus p{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.log .name{
+   margin-top: 3px;
+    font-weight: bold;
+    color: #193256;;
+}
+.navalinks{
+    display: none;
+}
+.navalinks .nav-container{
+    list-style: none;
+    color:#193256
+    
+} .navalinks .nav-container{
+    list-style: none;
+    color:#193256
+    
+}
+.navalinks .nav-container li a{
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #274b7e;
+
+}
+@media screen and (min-width: 900px){
+.navalinks {
+    display: flex;
+    gap: 10px;
+}
+
+    
+}
+
+.butn-taik{
+    padding: 9px 14px;
+    background:white;
+    outline: none;
+    border: 1px solid #9eaabb;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    color: #193256;
+    font-size: 14px;
+    border-radius: 9px;
+    font-weight:bold;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 3px;
+}
+.butn-taik a{
+    text-decoration: none;
+    color:#193256 ;
+    transition: all 0.4s ease-in-out;
+}
+.butn-taik i{
+    font-size: 17px;
+}
+.butn-taik:hover{
+    background: #193256;
+    
+  
+}
+.butn-taik:hover a{
+  
+    color: white !important;
+  
+}
+@media  screen and (max-width:768px){
+    .butn-taik{
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+}
+.menu{
+    display: none;    
+}
+@media screen and  (max-width: 900px ){
+    .menu{
+        display: block;    
+        padding: 8px;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 25px;
+        font-weight:bold;
+        cursor: pointer;
+        color: #8873ef; 
+        margin-bottom: 3px;  
+    }
+}

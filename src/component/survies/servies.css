@@ -1,0 +1,163 @@
+/*  primaryColor: "#8873ef",
+        headingColor: "#081e21",
+        smallTextColor: "#193256", */ 
+.text-center{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+   
+}
+.text-center h1{
+    color:#081e21;
+    margin-bottom: 12px;
+
+}
+.text-center p{
+    width: 45%;
+    margin:  0 auto;
+    line-height: 1.7;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 750px) {
+    .text-center p{
+        width: 80%;
+    }
+}
+.temline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+.checkpoint{
+    max-width: 35em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position:relative;
+  
+
+}
+.checkpoint div{
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #081e21;
+
+}
+.checkpoint div i{
+    font-size: 30px;
+    color: #8873ef;
+  
+}
+.checkpoint div:hover .content-surves{
+    color: white !important;
+}
+.content-surves{
+    border: none !important;
+    display: grid !important;
+    align-items: center !important;
+}
+.checkpoint:nth-child(odd) {
+    border-left: 3px solid #888;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+.checkpoint:nth-child(even) {
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content: '';
+    background: #888;
+    position: absolute;
+    width: 3em;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+.checkpoint:nth-child(odd) div h3,
+.checkpoint:nth-child(even) div h3{
+    margin-bottom: 6px;
+}
+.checkpoint:nth-child(odd) div p,
+.checkpoint:nth-child(even) div p{
+   line-height:1.4 ;
+}
+.checkpoint:nth-child(odd) div,
+.checkpoint:nth-child(even) div{
+    transition: all 0.4s ease-in-out;
+    color: #081e21;
+}
+/* .checkpoint:nth-child(odd) div:hover,
+.checkpoint:nth-child(even) div:hover{
+    color: white;
+} */
+.checkpoint:nth-child(odd) div:hover,
+.checkpoint:nth-child(even) div:hover{
+    background: #8873ef;
+    color: white;
+    
+}
+.checkpoint:nth-child(odd) div:hover i,
+.checkpoint:nth-child(even) div:hover i {
+    color: white;
+}
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content: '';
+    background: #8873ef;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right: -0.5em;
+}
+@media screen and (max-width: 992px){
+    .temline{
+        width: 80vw;
+
+    }
+    .temline .checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .temline .checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .temline .checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-surves h3{
+        font-size: 19px;
+    }
+    .content-surves p{
+        font-size: 13px;
+    }
+}
